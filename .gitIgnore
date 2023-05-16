@@ -1,0 +1,7 @@
+Library/
+Temp/
+*.exe
+*.apk
+*.app
+*.log
+*.txt
