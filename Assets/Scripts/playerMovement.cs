@@ -13,6 +13,8 @@ public class playerMovement : MonoBehaviour
 
         Vector2 newPosition = transform.position + new Vector3(0f, playerInput * playerSpeed * Time.deltaTime, 0f);
 
+        newPosition.y = Mathf.Clamp(newPosition.y, -4f, 4f);
+
         transform.position = newPosition;
     }
 }
